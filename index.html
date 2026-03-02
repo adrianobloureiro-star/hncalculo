@@ -77,9 +77,9 @@
     let map, directionsService, directionsRenderer, geocoder;
     
     // Configurações de Preço
-    let TARIFA_BASE = 180.00;
-    let VALOR_POR_KM = 5.00;
-    const ADICIONAL_NOTURNO = 50.00;
+    let TARIFA_BASE = 10.00;
+    let VALOR_POR_KM = 4.00;
+    const ADICIONAL_NOTURNO = 10.00;
     const WHATSAPP_NUMERO = "5527988342615";
 
     let ultimoResumo = null, ultimoSnapshot = null;
@@ -90,7 +90,7 @@
     
     function emHorarioNoturno() {
       const h = new Date().getHours();
-      return (h >= 22 || h < 6);
+      return (h >= 23 || h < 4);
     }
 
     function initAutocomplete() {
@@ -202,3 +202,4 @@
 </body>
 
 </html>
+
